@@ -206,7 +206,7 @@ header.sticky .navigation a{
 
 /* Testimonials Section */
 .testimonials{
-    background: url(/images/bg2.jpg);
+    background: url(./images/bg2.jpg);
     background-size: cover;
 }
 .testimonials .title h2,
@@ -253,7 +253,7 @@ header.sticky .navigation a{
 
 /* Contact Section */
 .contact{
-    background: url(/images/bg3.jpg);
+    background: url(./images/bg3.jpg);
     background-size: cover;
 }
 .contact .contactForm{
