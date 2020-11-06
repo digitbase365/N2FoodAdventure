@@ -1,0 +1,420 @@
+html{
+    scroll-behavior: smooth;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+body{
+    min-height: 1000px;
+}
+section{
+    padding: 100px;
+}
+p{
+    font-weight: 300;
+    color: #111;
+}
+img {
+    width: 100%;
+    object-fit: cover;
+    height: 100%;
+}
+.btn{
+    text-decoration: none;
+    font-size: 1em;
+    display: inline-block;
+    color: #fff;
+    padding: 10px 30px;
+    margin-top: 20px;
+    background-color: #ff0157;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: .2s;
+}
+.btn:hover{
+    letter-spacing: 5px;
+}
+.title{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.title p{
+    text-align:  center;
+}
+/* Header  */
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10000;
+    transition: .5s;
+    background-color: rgba(0, 0, 0, .2);
+}
+header .logo{
+    color: #fff;
+    font-weight: 700;
+    font-size: 2em;
+    text-decoration: none;
+}
+header .logo span{
+    color: #ff0157;
+}
+header .navigation{
+    position: relative;
+    display: flex;
+    list-style: none;
+}
+header .navigation li{
+    margin-left: 30px;
+}
+header .navigation li a{
+    text-decoration: none;
+    color: #fff;
+    font-weight: 300;
+}
+header .navigation li a:hover{
+    color: #ff0157;
+}
+header.sticky{
+    padding: 5px 100px;
+    background-color: #fff;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, .15);
+}   
+header.sticky .logo,
+header.sticky .navigation a{
+    color: #111;
+} 
+
+
+/* End of Header  */
+
+.banner{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(./images/bg.jpg);
+    background-size: cover;
+}
+.banner .content{
+    max-width: 900px;
+    text-align: center;
+}
+.banner .content h2{
+    font-size: 5em;
+    color: #fff;
+}
+.banner .content p{
+    font-size: 1em;
+    color: #fff;
+} 
+
+
+
+
+/* About Section */
+.row{
+    position: relative;
+    width: 100%;
+    justify-content: space-between;
+    display: flex; 
+}
+.row .col50{
+    width: 48%;
+}
+.titleText{
+    font-size: 2em;
+    color: #111;
+    font-weight: 300;
+}
+.titleText span{
+    color: #ff0157;
+    font-weight: 700;
+    font-size: 1.33em;
+}
+.row .col50 .imgBx{
+    position: relative;
+    width: 100%;
+    height: 100%;
+} 
+/* End of About Section */
+
+/* Menu Section */
+.menu .content{
+    display: flex;
+    justify-content: center;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+.menu .content .box{
+    width: 340px;
+    margin: 20px;
+    border: 15px solid #fff;
+    box-shadow: 0 5px 35px rgba(0, 0, 0, .25);
+}
+.menu .content .box .imgBx{
+    position: relative;
+    width: 100%;
+    height: 300px;
+} 
+.menu .content .box .text{
+    padding: 15px 0 0; 
+}
+.menu .text h3{
+    font-weight: 400;
+    color: #111;
+}
+/* End of Menu Section */
+
+
+/* Expert Section */
+.expert .content{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+.expert .content .box{
+    width: 300px;
+    margin: 15px;
+}
+.expert .content .box .text{
+    /* padding-top: 12px; */
+    font-weight: 400;
+    color: #111;
+}
+.expert .content .box .text h3{
+    font-weight: 400;
+    color: #111;
+} 
+
+/* End of Expert Section */
+
+/* Testimonials Section */
+.testimonials{
+    background: url(/images/bg2.jpg);
+    background-size: cover;
+}
+.testimonials .title h2,
+.testimonials .title p{
+    color: #fff;
+}
+.testimonials .content{
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.testimonials .content .box{
+    width: 340px;
+    margin: 20px;
+    padding: 40px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.testimonials .content .box .imgBx{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+.testimonials .text{
+    text-align: center;
+}
+.testimonials .text p{
+    color: #666;
+    font-style: italic;
+    margin-bottom: 20px;
+}
+.testimonials .text h3{
+    font-size: 1em;
+    font-weight: 600;
+    color: #ff0157;
+}
+/* End of Testimonials Section */
+
+/* Contact Section */
+.contact{
+    background: url(/images/bg3.jpg);
+    background-size: cover;
+}
+.contact .contactForm{
+    padding: 75px 50px;
+    background: #fff;
+    box-shadow: 0 15px 50px rgba(0, 0, 0, .2);
+    max-width: 500px;
+    margin-top: 50px;
+}
+.contact .contactForm h3{
+    color: #111;
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    font-weight: 500;
+}
+.contactForm .inputBox{
+    /* width: 100%; */
+    margin-bottom: 20px;
+}
+.contactForm .inputBox input,
+.contactForm textarea{
+    width: 100%;
+    border: none;
+    border: 1px solid #555;
+    padding: 10px;
+    color: #111;
+    outline: none;
+    font-weight: 300;
+    resize: none;
+}
+.contactForm input[type = "submit"]{
+    font-size: 1.2em;
+    color: #fff;
+    background-color: #ff0157;
+    display: inline-block;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: .2s;
+    letter-spacing: 2px;
+    max-width: 100px;
+    font-weight: 500;
+    border: none;
+    cursor: pointer; 
+}
+/* End of Contact Section */
+
+/* Footer Section */
+.copyrightText{
+    padding: 8px 40px;
+    border-top: 1px solid rgba(0, 0, 0, .1);
+    text-align: center;
+}
+.copyrightText p{
+    color: #333;
+}
+.copyrightText a{
+    color: #ff0157;
+    text-decoration: none;
+    font-weight: 500;
+}
+/* End of Footer Section */
+
+
+/* **********MEDIA QUERIES********************* */
+@media screen and (max-width:991px){
+    header,
+    header.sticky {
+         padding: 10px 20px;
+    }
+    header .navigation{
+        display: none;
+    }
+    .navigation.active{
+        width: 100%;
+        height: calc(100% - 63px);
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        top: 63px;
+        left: 0;
+        justify-content: center;
+        align-items: center;
+        background-color: #fff;
+    }
+    header .navigation li {
+        margin-left: 0;
+    }
+    header .navigation li a { 
+        color: #111; 
+        font-size: 1.6em;
+    } 
+    .menuToggle{
+        position: relative;
+        width: 40px;
+        height: 40px;
+        background: url(/images/menu.png);
+        background-size: 30px;
+        background-repeat: no-repeat;
+        cursor: pointer;
+        background-position: center;
+    }
+    .menuToggle.active{
+        background: url(/images/close.png);
+        background-size: 25px;
+        background-repeat: no-repeat;
+        cursor: pointer;
+        background-position: center;
+    }
+    .sticky .menuToggle{
+        filter: invert(1);
+    }
+    section {
+        padding: 20px;
+    }
+    .banner .content h2 {
+        font-size: 3em;  
+    }
+    .row { 
+        flex-direction: column;
+    }
+    .row .col50 {
+        width: 100%;
+        height: 300px;
+    }
+    .row .col50 .imgBx{ 
+        position: relative;
+        height: 300px;
+        margin-top: 20px;
+    }
+    .menu .content{
+        margin-top: 20px;
+    }
+    .menu .content .box { 
+        margin: 10px;   
+    }
+    .menu .content .box .imgBx { 
+        height: 260px;
+    }
+    .titleText { 
+        text-align: center;
+        font-size: 1.8em;
+        line-height: 1.5em;
+        margin-bottom: 15px;
+    }
+    .testimonials .content .box {
+        margin: 10px;
+        padding: 20px;
+    }
+    .contact .contactForm {
+        padding: 35px 40px;  
+        margin-top: 20px;
+        margin-bottom: 30px;
+    }
+    .contact { 
+        background-position: right;
+    }
+    
+}
+@media screen and (max-width: 480px){
+    .banner .content h2 {
+        font-size: 2.1em;
+    }
+}
+     
